@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_gravity="bottom"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/timestamp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|end"/>
+
+    </LinearLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/thumbnails_container"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:padding="16dp"/>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp"
+        android:lineSpacingExtra="3dp"
+        android:textSize="14sp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingEnd="16dp"
+        android:paddingStart="16dp">
+
+        <TextView
+            android:id="@+id/filescount"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:visibility="gone"
+            android:gravity="center_vertical"
+            android:drawableStart="@drawable/ic_insert_drive_file_black_18dp"
+            android:drawablePadding="2dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_gravity="bottom"
+        android:background="@color/divider_color_dark"/>
+</LinearLayout>
